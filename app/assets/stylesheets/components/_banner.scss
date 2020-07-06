@@ -1,0 +1,40 @@
+.banner{
+  background-image: radial-gradient(50% 50% at 50% 50%, rgba(38, 38, 38, 0.5) 0%, rgba(0, 0, 0, 0.5) 100%), url(asset-path('banner.jpg'));
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  color: white;
+  padding: 10px;
+  .title{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    flex-grow: 1;
+    h1{
+      font-size: 175px;
+      font-weight: 300;
+      margin: 0;
+    }
+  }
+  .scrollLink{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    p{
+      margin: 0;
+      font-family: $mont;
+      font-size: 26px;
+      font-weight: 300;
+    }
+    .chivronicon{
+      height: 25px;
+    }
+  }
+}
+

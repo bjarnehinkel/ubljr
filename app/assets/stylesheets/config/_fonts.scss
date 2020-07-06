@@ -5,6 +5,10 @@
 $mont: 'Montserrat', 'sans-serif';
 $montalt: 'Montserrat Alternates', 'sans-serif';
 
+h1{
+  font-family: $mont;
+}
+
 // To use a font file (.woff) uncomment following lines
 // @font-face {
 //   font-family: "Font Name";
