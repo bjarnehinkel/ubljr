@@ -1,1 +1,44 @@
-
+.navbar{
+  width: 100vw;
+  height: 88px;
+  background-color: rgba(255,255,255,0.55);
+  backdrop-filter: blur(15px);
+  position: fixed;
+  top: 0;
+  padding: 0;
+  display: flex;
+  align-content: center;
+  .logos{
+    padding-left: 50px;
+    display: flex;
+    align-items: center;
+    flex-grow: 1;
+    .ubljrnavbar{
+      height: 54px;
+    }
+    .numbernavbar{
+      height: 54px;
+    }
+  }
+  .quicklinks{
+    display: flex;
+    align-items: center;
+    padding-right: 50px;
+    height: 100%;
+    a{
+      color: #575757;
+      font-family: $mont;
+      font-weight: 600;
+      font-size: 25px;
+      margin: 0 10px;
+      line-height: 88px;
+      height: 100%;
+      &:hover{
+        text-decoration: none;
+      }
+      &.active{
+        border-bottom: 4px solid #EA0000;
+      }
+    }
+  }
+}
