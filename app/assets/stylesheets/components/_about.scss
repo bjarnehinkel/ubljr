@@ -1,0 +1,82 @@
+.about{
+  height: 1000px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  p{
+    margin: 0;
+    font-family: $montalt;
+    &.numberHeader{
+      margin-top: 95px;
+      font-weight: 500;
+      color: $number-gray;
+      font-size: 27px;
+    }
+    &.textHeader{
+      color: $header-gray;
+      font-size: 31px;
+      font-weight: 300;
+    }
+  }
+  .aboutSlideContainer{
+    width: 985px;
+    height: 645px;
+    box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.27);
+    margin-top: 55px;
+    display: flex;
+    background-color: #E0E0E0;
+    .picturesCarousel{
+      width: 43%;
+      height: 645px!important;
+      .carousel-inner{
+        height: 645px!important;
+        .carousel-item{
+          height: 645px!important;
+          img{
+            height: 645px!important;
+            object-fit: cover;
+          }
+        }
+      }
+    }
+    .infoSlides{
+      width: 57%;
+      height: 645px!important;
+      .carousel-inner{
+        height: 645px!important;
+        .carousel-item{
+          height: 645px!important;
+          .cContainer{
+            padding-left: 38px;
+            padding-top: 23px;
+            height: 100%;
+            width: 85%;
+            h2{
+              font-family: $montalt;
+              font-size: 38px;
+              font-weight: 300;
+              margin-bottom: 29px;
+            }
+            &.steckbrief, &.laufbahn{
+              p{
+                font-size: 24px;
+                margin-bottom: 18px;
+                font-family: $mont;
+                &strong{
+                  font-weight: 500;
+                }
+              }
+            }
+            &.story{
+              p{
+                font-family: $mont;
+                margin: 0;
+                font-size: 24px;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}

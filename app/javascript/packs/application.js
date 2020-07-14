@@ -26,10 +26,8 @@ console.log('Hello World from Webpacker')
 // External imports
 import "bootstrap";
 
-// Internal imports, e.g:
-// import { initSelect2 } from '../components/init_select2';
+// Internal imports
+import { disable, extend } from "components/carousel";
 
-document.addEventListener('turbolinks:load', () => {
-  // Call your functions here, e.g:
-  // initSelect2();
-});
+disable();
+extend();
