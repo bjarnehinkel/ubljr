@@ -1,1 +1,19 @@
 // Specific CSS for your home-page
+.section{
+  p{
+    margin: 0;
+    font-family: $montalt;
+    &.numberHeader{
+      margin-top: 95px;
+      font-weight: 500;
+      color: $number-gray;
+      font-size: 27px;
+    }
+    &.textHeader{
+      color: $header-gray;
+      font-size: 31px;
+      font-weight: 300;
+      margin-bottom: 55px;
+    }
+  }
+}

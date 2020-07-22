@@ -25,9 +25,15 @@ console.log('Hello World from Webpacker')
 
 // External imports
 import "bootstrap";
+import { jarallax, jarallaxVideo } from 'jarallax'
 
 // Internal imports
 import { disable, extend } from "components/carousel";
 
 disable();
 extend();
+jarallaxVideo();
+
+jarallax(document.querySelector('.jarallax.first'), {
+    imgPosition: '0px -25px'
+});
