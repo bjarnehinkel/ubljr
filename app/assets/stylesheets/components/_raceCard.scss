@@ -1,0 +1,28 @@
+.raceCard{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 840px;
+  margin-bottom: 95px;
+  .text{
+    h2{
+      font-family: $montalt;
+      font-size: 37px;
+      margin-bottom: 50px;
+      font-weight: 300;
+    }
+    p{
+      font-family: $montalt;
+      font-size: 31px;
+      font-weight: 300;
+    }
+  }
+  .image{
+    img{
+      position: relative;
+      top: 25px;
+      left: 0;
+      width: 305px;
+    }
+  }
+}

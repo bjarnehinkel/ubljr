@@ -29,10 +29,13 @@ import { jarallax, jarallaxVideo } from 'jarallax'
 
 // Internal imports
 import { disable, extend } from "components/carousel";
+// import { find_next } from "components/races.js"
 
 disable();
 extend();
 jarallaxVideo();
+
+// const new_ = setInterval(find_next(), 2000);
 
 jarallax(document.querySelector('.jarallax.first'), {
     imgPosition: '0px -25px'
