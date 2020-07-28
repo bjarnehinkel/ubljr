@@ -40,3 +40,6 @@ jarallaxVideo();
 jarallax(document.querySelector('.jarallax.first'), {
     imgPosition: '0px -25px'
 });
+jarallax(document.querySelector('.jarallax.third'), {
+    imgPosition: '0px -25px'
+});

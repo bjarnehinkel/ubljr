@@ -1,29 +1,11 @@
 <%= render('components/banner') %>
 <%= render('components/about') %>
-<div class="first seperator jarallax">
-  <img class="jarallax-img" src="<%= asset_url('seperators/first.jpg') %>" alt="">
-  <div class="gradient"></div>
-  <%= image_tag("21.png",  class:'numberSep') %>
-</div>
+<%= render('seperators/firstSeperator') %>
 <!-- Socials to be done later -->
 <!-- <div class="socials section">
   <p class="numberHeader">#21</p>
   <p class="textHeader">Socials</p>
 </div> -->
 <!-- Socials to be done later -->
-<div class="races section">
-  <p class="numberHeader">#21</p>
-  <p class="textHeader">Nächstes Rennen</p>
-  <% @race = Race.next_race %>
-  <div class="raceCard">
-    <div class="text">
-      <h2><%= @race.name %> <%= @race.start_date %> - <%= @race.end_date %></h2>
-      <p>Länge: <%= @race.length %></p>
-      <p>Linkskurven: <%= @race.left %></p>
-      <p>Rechtskurven: <%= @race.right %></p>
-    </div>
-    <div class="image">
-      <%= cl_image_tag @race.photo.key %>
-    </div>
-  </div>
-</div>
+<%= render('components/races') %>
+<%= render('seperators/thirdSeperator') %>

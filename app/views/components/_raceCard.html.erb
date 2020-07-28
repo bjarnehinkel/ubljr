@@ -1,0 +1,11 @@
+<div class="raceCard">
+  <div class="text">
+    <h2><%= race.name %> <%= race.start_date %> - <%= race.end_date %></h2>
+    <p>Länge: <%= race.length %></p>
+    <p>Linkskurven: <%= race.left %></p>
+    <p>Rechtskurven: <%= race.right %></p>
+  </div>
+  <div class="image">
+    <%= cl_image_tag race.photo.key %>
+  </div>
+</div>
