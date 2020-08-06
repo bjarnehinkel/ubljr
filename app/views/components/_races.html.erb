@@ -1,6 +1,7 @@
-<div class="races section">
+<div class="races section" id="races">
   <p class="numberHeader">#21</p>
   <p class="textHeader">Nächstes Rennen</p>
   <% @race = Race.next_race %>
   <%= render('components/raceCard', race: @race) %>
+  <%= render('seperators/thirdSeperator') %>
 </div>

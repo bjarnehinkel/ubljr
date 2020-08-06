@@ -29,11 +29,16 @@ import { jarallax, jarallaxVideo } from 'jarallax'
 
 // Internal imports
 import { disable, extend } from "components/carousel";
+import { toggleActive } from "components/navbarActiveToggle";
 // import { find_next } from "components/races.js"
 
 disable();
 extend();
 jarallaxVideo();
+toggleActive();
+
+const aboutAnchor = document.querySelector('.anchor#about');
+const racesAnchor = document.querySelector('.anchor#races');
 
 // const new_ = setInterval(find_next(), 2000);
 

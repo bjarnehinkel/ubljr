@@ -1,15 +1,15 @@
-<div class="navbar">
+<div class="navbar" id="navbar">
   <div class="logos">
     <img class="ubljrnavbar" src="<%= asset_url('ubljr.png') %>" alt="">
     <img class="numbernavbar" src="<%= asset_url('21.png') %>" alt="">
   </div>
   <div class="quicklinks">
-    <a class="active" href="#">Home</a>
-    <a href="#">Über Mich</a>
-    <!-- <a href="#">Social</a> -->
-    <a href="#">Rennen</a>
-    <a href="#">Galerie</a>
-    <a href="#">Partner</a>
-    <a href="#">Kontakt</a>
+    <a class="quicklink" data-id="home" href="#banner">Home</a>
+    <a class="quicklink" data-id="about" href="#about">Über Mich</a>
+    <!-- <a class="quicklink" id="social" href="#">Social</a> -->
+    <a class="quicklink" data-id="races" href="#races">Rennen</a>
+    <a class="quicklink" data-id="galery" href="#gallery">Galerie</a>
+    <a class="quicklink" data-id="partners" href="#partners">Partner</a>
+    <a class="quicklink" data-id="contact" href="#contact">Kontakt</a>
   </div>
 </div>
