@@ -48,3 +48,6 @@ jarallax(document.querySelector('.jarallax.first'), {
 jarallax(document.querySelector('.jarallax.third'), {
     imgPosition: '0px -25px'
 });
+jarallax(document.querySelector('.jarallax.fourth'), {
+    imgPosition: '0px 0px'
+});

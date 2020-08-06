@@ -1,0 +1,61 @@
+<div class="gallery section" id="gallery">
+  <p class="numberHeader">#21</p>
+  <p class="textHeader">Gallerie</p>
+  <div class="cards">
+    <div type="button" class="basti galleryCard" data-toggle="modal" data-target="#bastiModal">
+      <img src="https://res.cloudinary.com/bjarnehinkel/image/upload/v1596727213/UblJr/Ubl%20Jr./Pictures/IMG_2021_f2uuny.jpg" alt="">
+      <div class="label">
+        <p>Ubl Jr.</p>
+      </div>
+    </div>
+    <div type="button" class="idm galleryCard" data-toggle="modal" data-target="#idmModal">
+      <img src="https://res.cloudinary.com/bjarnehinkel/image/upload/v1596727280/UblJr/IDM/Cover/IMG_6223_camh3j.jpg" alt="">
+      <div class="label">
+        <p>IDM</p>
+      </div>
+    </div>
+    <div type="button" class="pitbike galleryCard" data-toggle="modal" data-target="#pitbikeModal">
+      <img src="https://res.cloudinary.com/bjarnehinkel/image/upload/v1596727719/UblJr/Pitbike/Cover/B29I0584_mwxpfg.jpg" alt="">
+      <div class="label">
+        <p>Pitbike</p>
+      </div>
+    </div>
+  </div>
+  <div class="modal fade" id="bastiModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered" role="document">
+      <div class="modal-content">
+        <div class="modal-body">
+          <%= render('modalCarousels/bastiCarousel') %>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="modal fade" id="idmModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog" role="document">
+      <div class="modal-content">
+        <div class="modal-body">
+          <%= render('modalCarousels/idmCarousel') %>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="modal fade" id="pitbikeModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog" role="document">
+      <div class="modal-content">
+        <div class="modal-body">
+          <%= render('modalCarousels/pitbikeCarousel') %>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+        </div>
+      </div>
+    </div>
+  </div>
+  <%= render('seperators/fourthSeperator') %>
+</div>
